@@ -115,24 +115,24 @@
       });
       if (this.options.navigation.active) {
         prevButton = $("<a>", {
-          "class": "slidesjs-previous slidesjs-navigation",
-          href: "#",
-          title: "Previous",
-          text: "Previous"
-        }).appendTo($element);
-        nextButton = $("<a>", {
-          "class": "slidesjs-next slidesjs-navigation",
+          "class": "slidesjs-previous slidesjs-navigation ",
           href: "#",
           title: "Next",
           text: "Next"
         }).appendTo($element);
+        nextButton = $("<a>", {
+          "class": "slidesjs-next slidesjs-navigation ",
+          href: "#",
+          title: "Previous",
+          text: "Previous"
+        }).appendTo($element);
       }
-      $(".slidesjs-next", $element).click(function(e) {
+      $(".slidesjs-previous", $element).click(function(e) {
         e.preventDefault();
         _this.stop(true);
         return _this.next(_this.options.navigation.effect);
       });
-      $(".slidesjs-previous", $element).click(function(e) {
+      $(".slidesjs-next", $element).click(function(e) {
         e.preventDefault();
         _this.stop(true);
         return _this.previous(_this.options.navigation.effect);

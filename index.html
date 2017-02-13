@@ -33,8 +33,10 @@
     <section id="home">
       <div class="main">
         <div class="slides">
-          <img src="img/despierta.jpg">
-          <img src="img/nina-bandera.jpg">
+          <img src="img/logo.png">
+          <img src="img/coaching.jpg">
+          <img src="img/perros.jpg">
+          <img src="img/eat-sleep.jpg">
         </div>
       </div>
     </section>
@@ -58,5 +60,33 @@
     <script src="js/fastclick.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/fixed-responsive-nav.js"></script>
+
+    <!--SLIDER-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slides.js"></script>
+    <script >
+       $(function(){
+      $(".slides").slidesjs({
+      play: {
+      active: true,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+      effect: "slide",
+        // [string] Can be either "slide" or "fade".
+      interval: 4000,
+        // [number] Time spent on each slide in milliseconds.
+      auto: true,
+        // [boolean] Start playing the slideshow on load.
+      swap: true,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: false,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 2500
+        // [number] restart delay on inactive slideshow
+    }
+      });
+    });
+  </script>
+    </script>
   </body>
 </html>

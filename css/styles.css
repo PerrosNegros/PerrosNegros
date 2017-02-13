@@ -232,7 +232,7 @@ header {
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  background: #AD1D04;
+  background: #ED2705;
 }
 
 @media screen and (min-width: 40em) {
