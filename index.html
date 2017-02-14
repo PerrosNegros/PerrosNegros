@@ -5,6 +5,7 @@
     <title>Perros Negros</title>
     <meta name="author" content="Adtile">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/slider.css">
@@ -30,8 +31,9 @@
       </nav>
     </header>
 
-    <section id="home">
+    <section id="home" class="section1">
       <div class="main">
+        <p>Dejando huella</p>
         <div class="slides">
           <img src="img/logo.png">
           <img src="img/coaching.jpg">
@@ -41,7 +43,7 @@
       </div>
     </section>
 
-    <section id="about">
+    <section id="about" >
       <h1>About</h1>
     </section>
 
@@ -67,7 +69,7 @@
     <script >
        $(function(){
       $(".slides").slidesjs({
-      play: {
+        play: {
       active: true,
         // [boolean] Generate the play and stop buttons.
         // You cannot use your own buttons. Sorry.
@@ -81,9 +83,10 @@
         // [boolean] show/hide stop and play buttons
       pauseOnHover: false,
         // [boolean] pause a playing slideshow on hover
-      restartDelay: 2500
+      restartDelay: 2500,
         // [number] restart delay on inactive slideshow
     }
+      
       });
     });
   </script>
